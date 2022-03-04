@@ -9,11 +9,11 @@ export function getCustomers() {
     return customers;
 }
 
-export function findCustomer(term) {
-    let customersFounded = []
-    if (term !=='') {
-        const pattern = new RegExp("^" + term);
-        customersFounded = customers.filter(elem => pattern.test(elem.nombre))        
-    }
-    return customersFounded;
+export function setCustomer(customer) {
+     customers.push(customer);
+}
+
+export function getCustomerByCif(cif) {
+    let customerFounded = customers.filter(elem => elem.cif === cif);    
+    return customerFounded[0];
 }

@@ -76,11 +76,11 @@ img {
     padding: 24px;
     margin: 0 auto;
     opacity: 0;
-    transition: opacity 500ms;
 }
 
 .container.show {
     opacity: 1;
+    transition: opacity 500ms;
 }
 
 .card {
@@ -112,7 +112,7 @@ nav {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
     height: 60px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
 }
@@ -129,7 +129,7 @@ nav a {
     border-bottom: 2px solid white;
 }
 
-nav button {
+/* nav button {
     color: #718096;
     margin-right: 12px;
     min-width: 120px;
@@ -138,7 +138,7 @@ nav button {
     border: none;
     background-color: white;
     border-bottom: 2px solid white;
-}
+} */
 
 nav li.activo,
 nav a.activo {
@@ -146,10 +146,10 @@ nav a.activo {
     border-bottom: 2px solid #008489;
 }
 
-nav button.activo {
+/* nav button.activo {
     color: #287d78;
     border-bottom: 2px solid #008489;
-}
+} */
 
 nav li:active,
 nav li:focus {
